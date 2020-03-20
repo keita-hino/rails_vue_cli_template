@@ -33,5 +33,12 @@ module SampleApp
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    config.action_dispatch.default_headers = {
+      'Access-Control-Allow-Credentials' => 'true',
+      # TODO:本番にデプロイする場合は、本番のオリジンを許可するように。developとproductionで分けた方が良さそう
+      'Access-Control-Allow-Origin' => 'http://localhost:8080',
+      'Access-Control-Request-Method' => '*'
+    }
   end
 end
