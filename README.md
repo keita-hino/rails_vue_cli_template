@@ -1,0 +1,2 @@
+# rails_vue_environment_template
+rails6系とvue.jsのテンプレート
