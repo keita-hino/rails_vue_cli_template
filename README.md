@@ -1,2 +1,2 @@
-# rails_vue_environment_template
-rails6系とvue.jsのテンプレート
+# rails_vue_cli_template
+rails6系(backend)とvue cli(front)の疎通まで完了。
